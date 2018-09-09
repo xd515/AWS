@@ -5,12 +5,12 @@ AWS API Gateway allows you to connect mobile and web applications with business 
 ## Create a Lambda Function
 1. Choose runtime. To start a simple example, choose 'Aurhor from scratch', then give a name to the function and choose python 3.6 as rutime.
 
-![CreateFunctions](Figures/CreateFunctions.png)
+ ![CreateFunctions](Figures/CreateFunctions.png)
 
 2. Choose role. The role defines the permissions of the function and I choose the existing one.
 3. Add triggers. Add API Gateway as Trigger and when the function part is done, turn to the gateway.
 
-![AddTriggers](Figures/AddTriggers.png)
+ ![AddTriggers](Figures/AddTriggers.png)
 
 4. Function code. Here we could edit codes inline.
 
@@ -25,11 +25,11 @@ AWS API Gateway allows you to connect mobile and web applications with business 
 2. Choose 'Actions' then create resource. Here the Resource Name is 'twonums'.
 3. Choose 'Actions' then create method as 'GET', and connect it with the Lambda function created before.
 
-![Method](Figures/Method.png)
+ ![Method](Figures/Method.png)
 
 4. For this /twonums-GET Method, choose `Integration Request` --> `Body Mapping Templates`, add a mapping template in it.
 
-![MappingTemplate](Figures/MappingTemplate.png)
+ ![MappingTemplate](Figures/MappingTemplate.png)
 
 5. Choose 'Actions' then deploy API. Now the API is ready for querying. 
       
@@ -46,4 +46,4 @@ AWS API Gateway allows you to connect mobile and web applications with business 
  
     https://um17mcezuh.execute-api.us-east-1.amazonaws.com/Add/twonums?x=1&y=3.5
     
- ![Test1](Figures/Test1.png)
+  ![Test1](Figures/Test1.png)
