@@ -12,11 +12,11 @@ AWS API Gateway allows you to connect mobile and web applications with business 
 
 ![AddTriggers](Figures/AddTriggers.png)
 
-4. Function code. Here we cold edit codes inline.
+4. Function code. Here we could edit codes inline.
 
 ![EditCodeInline](Figures/EditCodeInline.png)
 
-__Note__: The definition of the lambda_function should be 'lambda_handler(event, context)'.
+ __Note__: The definition of the lambda_function should be 'lambda_handler(event, context)'.
 
 5. Test codes. Save and test codes at the meantime.
 
@@ -27,13 +27,11 @@ __Note__: The definition of the lambda_function should be 'lambda_handler(event,
 
 ![Method](Figures/Method.png)
 
-4. For this /nyc-GET Method, choose `Integration Request` --> `Body Mapping Templates`, add a mapping template in it.
+4. For this /twonums-GET Method, choose `Integration Request` --> `Body Mapping Templates`, add a mapping template in it.
 
 ![MappingTemplate](Figures/MappingTemplate.png)
 
 5. Choose 'Actions' then deploy API. Now the API is ready for querying. 
-      
-      https://um17mcezuh.execute-api.us-east-1.amazonaws.com/Add
       
  ## Test
  ### Query the sum of x and y, when x =1 and y = 2.
@@ -42,4 +40,10 @@ __Note__: The definition of the lambda_function should be 'lambda_handler(event,
       https://um17mcezuh.execute-api.us-east-1.amazonaws.com/Add/twonums?x=1&y=2
   
   ![Test](Figures/Test.png)
+  
+ ### Query the sum of x and y, when x =1 and y = 3.5.
+ twonums?x=1&y=3.5
  
+    https://um17mcezuh.execute-api.us-east-1.amazonaws.com/Add/twonums?x=1&y=3.5
+    
+ ![Test1](Figures/Test1.png)
